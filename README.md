@@ -66,8 +66,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **Home Page**
 - **Calculator included**
 - **Displays a random Math Quote**
@@ -186,7 +184,6 @@ Feel free to check the [issues page](https://github.com/Diegogagan2587/math-magi
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
 If you like this project feel free to leave an star to this repo.
 
@@ -196,7 +193,6 @@ If you like this project feel free to leave an star to this repo.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Special thanks for....
 
 I would like to thank Microverse for suggesting projects like this!.
 
