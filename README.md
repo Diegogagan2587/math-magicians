@@ -12,7 +12,6 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -59,14 +58,6 @@
   </ul>
 </details>
 
-
-### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- **Home Page**
-- **Calculator included**
-- **Displays a random Math Quote**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,24 +162,6 @@ Example:
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Diegogagan2587/math-magicians/issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
-
-If you like this project feel free to leave an star to this repo.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Special thanks for....
-
-I would like to thank Microverse for suggesting projects like this!.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
