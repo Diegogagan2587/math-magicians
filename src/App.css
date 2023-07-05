@@ -1,39 +1,39 @@
 * {
-    box-sizing: 0;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 button {
-    background-color: inherit;
+  background-color: inherit;
 }
 
 .calculator {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    max-width: 50vmin;
-    min-height: 50vmin;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 50vmin;
+  min-height: 50vmin;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .screen-output {
-    background-color: gray;
-    grid-area: screen;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: gray;
+  grid-area: screen;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .inputs-section {
-    flex-grow: 5;
-    background-color: whitesmoke;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
+  flex-grow: 5;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
     'ac plus-les percentage divide '
     'seven eigth nine multiply '
     'four five six less '
@@ -42,32 +42,30 @@ button {
 }
 
 .orange {
-    background-color: #ff7400;
+  background-color: #ff7400;
 }
 
-.btn-ac { grid-area: ac;}
-.btn-plus-les {  grid-area: plus-les;}
-.btn-percentage { grid-area: percentage;}
-.divide { grid-area: divide;}
-.multiply{ grid-area: multiply;}
-.less{ grid-area: less;}
-.plus{ grid-area: plus;}
-.equal{grid-area: equal;}
-.poin{grid-area: point;}
+.btn-ac { grid-area: ac; }
+.btn-plus-les { grid-area: plus-les; }
+.btn-percentage { grid-area: percentage; }
+.divide { grid-area: divide; }
+.multiply { grid-area: multiply; }
+.less { grid-area: less; }
+.plus { grid-area: plus; }
+.equal { grid-area: equal; }
+.poin { grid-area: point; }
 
-.zero {grid-area: zero;}
-.one{grid-area: one;}
-.two{ grid-area: two;}
-.three{grid-area: three;}
-.four{grid-area: four;}
-.five{grid-area: five;}
-.six{grid-area: six;}
-.seven{grid-area: seven;}
-.eigth{grid-area: eigth;}
-.nine{grid-area: nine;}
-
+.zero { grid-area: zero; }
+.one { grid-area: one; }
+.two { grid-area: two; }
+.three { grid-area: three; }
+.four { grid-area: four; }
+.five { grid-area: five; }
+.six { grid-area: six; }
+.seven { grid-area: seven; }
+.eigth { grid-area: eigth; }
+.nine { grid-area: nine; }
 
 .point {
-    grid-area: point;
+  grid-area: point;
 }
-
