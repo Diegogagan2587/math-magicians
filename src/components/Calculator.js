@@ -1,3 +1,5 @@
+import calculate from "./logic/calculate.js";
+
 const CalcInputs = () => (
   <div className="inputs-section">
     <button className="btn-ac" type="button">AC</button>
