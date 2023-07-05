@@ -163,7 +163,9 @@ Example:
 
 > Additional Features I will add.
 
-- [ ] **Nice User Interface**
+-  **Each Calculator button will display it function within the Screen**
+-  **Home Page**
+-  **Quote Page**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
