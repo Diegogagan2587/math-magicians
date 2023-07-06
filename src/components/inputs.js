@@ -4,7 +4,7 @@ function CalcInputs({ eventHandler }) {
       <button className="btn-ac" type="button">AC</button>
       <button className="btn-plus-les" type="button">+/-</button>
       <button className="btn-percentage" type="button">%</button>
-      <button className="divide orange" type="button">/</button>
+      <button className="divide orange" type="button">÷</button>
       <button className="multiply orange" type="button">X</button>
       <button className="less orange" type="button">-</button>
       <button className="plus orange" type="button">+</button>
