@@ -1,34 +1,31 @@
-import calculate from "./logic/calculate.js";
+import React, { useState } from 'react';
+import { keyboard } from '@testing-library/user-event/dist/keyboard';
+import calculate from './logic/calculate';
+import CalcInputs from './inputs';
 
-const CalcInputs = () => (
-  <div className="inputs-section">
-    <button className="btn-ac" type="button">AC</button>
-    <button className="btn-plus-les" type="button">+/-</button>
-    <button className="btn-percentage" type="button">%</button>
-    <button className="divide orange" type="button">/</button>
-    <button className="multiply orange" type="button">X</button>
-    <button className="less orange" type="button">-</button>
-    <button className="plus orange" type="button">+</button>
-    <button className="equal orange" type="button">=</button>
-    <button className="nine" type="button">9</button>
-    <button className="eigth" type="button">8</button>
-    <button className="seven" type="button">7</button>
-    <button className="six" type="button">6</button>
-    <button className="five" type="button">5</button>
-    <button className="four" type="button">4</button>
-    <button className="three" type="button">3</button>
-    <button className="two" type="button">2</button>
-    <button className="one" type="button">1</button>
-    <button className="zero" type="button">0</button>
-    <button className="point" type="button">.</button>
-  </div>
-);
+const Calculator = () => {
+  const [mathResult, setMathResult] = useState({});
 
-const Calculator = () => (
-  <div className="calculator">
-    <div className="screen-output">0</div>
-    <CalcInputs />
-  </div>
-);
+  // -------------------start event Listeners
+  const eventHandler = (event) => {
+    console.log('runing event handler');
+    console.log('event.target =', event.target.innerText);
+    setMathResult(calculate(mathResult, `${event.target.innerText}`)); // return object { total, next, operation }
+  };
+
+  return (
+    <div className="calculator">
+      {console.log('Calculator component is runing')}
+      <div className="screen-output">
+        {mathResult.total}
+        {mathResult.operation}
+        {mathResult.next}
+      </div>
+      <div>
+        <CalcInputs eventHandler={eventHandler} />
+      </div>
+    </div>
+  );
+};
 
 export default Calculator;
