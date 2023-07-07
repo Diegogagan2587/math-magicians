@@ -20,9 +20,7 @@ function Quotes() {
           throw new Error(response.error);
         }
         setData(response[0]);
-
       } catch (error) {
-        
         setHasError(true);
       }
       setIsLoading(false);
@@ -30,20 +28,20 @@ function Quotes() {
     fetchData();
   }, [setData, setIsLoading]);
 
-  if (isLoading) return <div className='loading'>Loading...</div>;
+  if (isLoading) return <div className="loading">Loading...</div>;
 
-  if (hasError) return <div className='loading'>Something Went Wrong...!</div>;
+  if (hasError) return <div className="loading">Something Went Wrong...!</div>;
 
-    return (
-      <div className="section-quotes">
-        <h3>{`Author: ${data.author}`}</h3>
-        <p>
-          {`Category: ${data.category}`}
-        </p>
-        <p>{data.quote}</p>
-  
-      </div>
-    )
+  return (
+    <div className="section-quotes">
+      <h3>{`Author: ${data.author}`}</h3>
+      <p>
+        {`Category: ${data.category}`}
+      </p>
+      <p>{data.quote}</p>
+
+    </div>
+  );
 }
 
 export default Quotes;
