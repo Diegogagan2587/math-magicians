@@ -8,7 +8,7 @@ function CalcInputs({ eventHandler }) {
       <button onClick={eventHandler} className="btn-plus-les" type="button">+/-</button>
       <button onClick={eventHandler} className="btn-percentage" type="button">%</button>
       <button onClick={eventHandler} className="divide orange" type="button">÷</button>
-      <button onClick={eventHandler} className="multiply orange" type="button">X</button>
+      <button onClick={eventHandler} className="multiply orange" type="button">x</button>
       <button onClick={eventHandler} className="less orange" type="button">-</button>
       <button onClick={eventHandler} className="plus orange" type="button">+</button>
       <button onClick={eventHandler} className="equal orange" type="button">=</button>
