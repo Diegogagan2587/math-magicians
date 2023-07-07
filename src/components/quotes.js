@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 
 function Quotes() {
-  const [data, setData] = useState([]); // will use to fetch data,
+  const [data, setData] = useState([]); 
   const dataURL = 'https://api.api-ninjas.com/v1/quotes';
   const keyAPI = 'nydBGDrsvveo1WS8DaxRHg==cvlsf9eU72JeSvDS';
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
+      setIsLoading(true);
       const request = await fetch(dataURL, {
         method: 'GET',
         headers: { 'X-Api-Key': keyAPI },
@@ -14,9 +16,14 @@ function Quotes() {
       const response = await request.json();
       console.log(response[0]);
       setData(response[0]);
+      setIsLoading(false);
     };
     fetchData();
-  }, [setData]);// useEffect(myfunction, [dependencies])
+  }, [setData,setIsLoading]);
+
+  if(isLoading) return (
+    <div className='loading'>Loading...</div>
+  );
 
   return (
     <div className="section-quotes">
@@ -25,8 +32,9 @@ function Quotes() {
           {`Category: ${data.category}`}
         </p> 
         <p>{data.quote}</p> 
+        
     </div>
-  );
+  )
 }
 
 export default Quotes;

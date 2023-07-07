@@ -77,3 +77,9 @@ button {
 .section-quotes {
   margin: 5% auto;
 }
+
+.loading {
+  margin: 3% auto;
+  font-size: 1.5rem;
+  color: red;
+}
