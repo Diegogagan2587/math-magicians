@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { keyboard } from '@testing-library/user-event/dist/keyboard';
 import calculate from './logic/calculate';
 import CalcInputs from './inputs';
 
@@ -21,9 +20,7 @@ const Calculator = () => {
         {mathResult.operation}
         {mathResult.next}
       </div>
-      <div>
-        <CalcInputs eventHandler={eventHandler} />
-      </div>
+      <CalcInputs eventHandler={eventHandler} />
     </div>
   );
 };
