@@ -14,77 +14,114 @@ function isNumber(item) {
  *   operation:String  +, -, etc.
  */
 export default function calculate(obj, buttonName) {
+  console.log('runing Calculate(', obj, buttonName, ')');
+
+  let result;
   if (buttonName === 'AC') {
-    return {
+    result = {
       total: null,
       next: null,
       operation: null,
     };
+    console.log('calculate will return ----->', result);
+    return result;
   }
 
   if (isNumber(buttonName)) {
     if (buttonName === '0' && obj.next === '0') {
-      return {};
+      result = {};
+      console.log('calculate will return ----->', result);
+      return result;
     }
     // If there is an operation, update next
     if (obj.operation) {
       if (obj.next && obj.next !== '0') {
-        return { ...obj, next: obj.next + buttonName };
+        result = { ...obj, next: obj.next + buttonName };
+        console.log('calculate will return ----->', result);
+        return result;
       }
-      return { ...obj, next: buttonName };
+      result = { ...obj, next: buttonName };
+      console.log('calculate will return ----->', result);
+      return result;
     }
     // If there is no operation, update next and clear the value
     if (obj.next && obj.next !== '0') {
-      return {
+      result = {
         next: obj.next + buttonName,
         total: null,
       };
+      console.log('calculate will return ----->', result);
+      return result;
     }
-    return {
+    result = {
       next: buttonName,
       total: null,
     };
+    console.log('calculate will return ----->', result);
+    return result;
   }
 
   if (buttonName === '.') {
     if (obj.next) {
       if (obj.next.includes('.')) {
-        return { ...obj };
+        result = { ...obj };
+        console.log('calculate will return ----->', result);
+        return result;
       }
-      return { ...obj, next: `${obj.next}.` };
+      result = { ...obj, next: `${obj.next}.` };
+      console.log('calculate will return ----->', result);
+      return result;
     }
     if (obj.operation) {
-      return { ...obj, next: '0.' };
+      result = { ...obj, next: '0.' };
+      console.log('calculate will return ----->', result);
+      return result;
     }
     if (obj.total) {
       if (obj.total.includes('.')) {
-        return {};
+        result = {};
+        console.log('calculate will return ----->', result);
+        return result;
       }
-      return { ...obj, next: `${obj.total}.` };
+      result = { ...obj, next: `${obj.total}.` };
+      console.log('calculate will return ----->', result);
+      return result;
     }
-    return { ...obj, next: '0.' };
+    result = { ...obj, next: '0.' };
+    console.log('calculate will return ----->', result);
+    return result;
   }
 
   if (buttonName === '=') {
     if (obj.next && obj.operation) {
-      return {
+      result = {
         total: operate(obj.total, obj.next, obj.operation),
         next: null,
         operation: null,
       };
+      console.log('calculate will return ----->', result);
+      return result;
     }
     // '=' with no operation, nothing to do
-    return {};
+    result = {};
+    console.log('calculate will return ----->', result);
+    return result;
   }
 
   if (buttonName === '+/-') {
     if (obj.next) {
-      return { ...obj, next: (-1 * parseFloat(obj.next)).toString() };
+      result = { ...obj, next: (-1 * parseFloat(obj.next)).toString() };
+      console.log('calculate will return ----->', result);
+      return result;
     }
     if (obj.total) {
-      return { ...obj, total: (-1 * parseFloat(obj.total)).toString() };
+      result = { ...obj, total: (-1 * parseFloat(obj.total)).toString() };
+      console.log('calculate will return ----->', result);
+      return result;
     }
-    return {};
+    result = {};
+    console.log('calculate will return ----->', result);
+    return result;
   }
 
   // Button must be an operation
@@ -97,37 +134,49 @@ export default function calculate(obj, buttonName) {
 
   // User pressed an operation after pressing '='
   if (!obj.next && obj.total && !obj.operation) {
-    return { ...obj, operation: buttonName };
+    result = { ...obj, operation: buttonName };
+    console.log('calculate will return ----->', result);
+    return result;
   }
 
   // User pressed an operation button and there is an existing operation
   if (obj.operation) {
     if (obj.total && !obj.next) {
-      return { ...obj, operation: buttonName };
-    }
-    
-    if (!obj.total) {
-      return { total: 0, operation: buttonName };
+      result = { ...obj, operation: buttonName };
+      console.log('calculate will return ----->', result);
+      return result;
     }
 
-    return {
+    if (!obj.total) {
+      result = { total: 0, operation: buttonName };
+      console.log('calculate will return ----->', result);
+      return result;
+    }
+
+    result = {
       total: operate(obj.total, obj.next, obj.operation),
       next: null,
       operation: buttonName,
     };
+    console.log('calculate will return ----->', result);
+    return result;
   }
 
   // no operation yet, but the user typed one
 
   // The user hasn't typed a number yet, just save the operation
   if (!obj.next) {
-    return { operation: buttonName };
+    result = { operation: buttonName };
+    console.log('calculate will return ----->', result);
+    return result;
   }
 
   // save the operation and shift 'next' into 'total'
-  return {
+  result = {
     total: obj.next,
     next: null,
     operation: buttonName,
   };
+  console.log('result from Calculate', result);
+  return result;
 }

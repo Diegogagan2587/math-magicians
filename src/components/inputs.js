@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function CalcInputs({ eventHandler }) {
   return (
     <div className="inputs-section">
@@ -23,5 +25,9 @@ function CalcInputs({ eventHandler }) {
     </div>
   );
 }
+
+CalcInputs.propTypes = {
+  eventHandler: PropTypes.func.isRequired,
+};
 
 export default CalcInputs;
