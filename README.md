@@ -68,7 +68,10 @@
 
 - **Home Page**
 - **Calculator included**
+  - **Calc Perform operations properly**
+  - **Calc dislay in real time when a digit is pressed**
 - **Displays a random Math Quote**
+  - **Include a loading indicator**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -163,7 +166,6 @@ Example:
 
 > Additional Features I will add.
 
--  **Each Calculator button will display it function within the Screen**
 -  **Home Page**
 -  **Quote Page**
 
