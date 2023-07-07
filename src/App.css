@@ -71,3 +71,9 @@ button {
 .point {
   grid-area: point;
 }
+
+/* -- start Quotes section -- */
+
+.section-quotes {
+  margin: 5% auto;
+}
