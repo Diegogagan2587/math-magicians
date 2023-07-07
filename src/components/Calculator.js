@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import calculate from './logic/calculate';
 import CalcInputs from './inputs';
+import Quotes from './quotes';
 
 const Calculator = () => {
   const [mathResult, setMathResult] = useState({});
@@ -17,6 +18,7 @@ const Calculator = () => {
         {mathResult.next}
       </div>
       <CalcInputs eventHandler={eventHandler} />
+      <Quotes />
     </div>
   );
 };
