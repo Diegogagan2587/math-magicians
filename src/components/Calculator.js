@@ -11,15 +11,18 @@ const Calculator = () => {
   };
 
   return (
-    <div className="calculator">
-      <div className="screen-output">
-        {mathResult.total}
-        {mathResult.operation}
-        {mathResult.next}
+    <>
+      <h2>Let's do some math!</h2>
+      <div className="calculator">
+        <div className="screen-output">
+          {mathResult.total}
+          {mathResult.operation}
+          {mathResult.next}
+        </div>
+        <CalcInputs eventHandler={eventHandler} />
       </div>
-      <CalcInputs eventHandler={eventHandler} />
-      <Quotes />
-    </div>
+    </>
+
   );
 };
 
