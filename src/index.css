@@ -3,6 +3,19 @@ ul {
     list-style: none;
 }
 
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #A58B77;
+}
+
+body {
+    background-color: #D9CFC7;
+    color: #024059;
+}
+
 /* --- start Navigation Bar --- */
 
 .nav {
@@ -11,6 +24,8 @@ ul {
     justify-content: space-between;
     padding-left: 3%;
     padding-right: 3%;
+    background-color: #0B5B8C;
+    color: #D9CFC7;
 }
 
 .nav .title {
