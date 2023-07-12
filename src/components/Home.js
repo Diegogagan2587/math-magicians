@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-        <>
+        <div className="home" >
             <h2>Welcome to our page!</h2>
             <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                  has been the industry's standard dummy text ever since the 1500s, when an unknown prin
@@ -19,7 +19,7 @@ const Home = () => {
                   sheets containing Lorem Ipsum passages, and more recently with desktop publishing s
                   oftware like Aldus PageMaker including versions of Lorem Ipsum. 
             </p>
-        </>
+        </div>
     )
 }
 
