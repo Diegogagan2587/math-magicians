@@ -1,1 +1,27 @@
 /* index styles */
+ul {
+    list-style: none;
+}
+
+/* --- start Navigation Bar --- */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.nav .title {
+    flex-grow: 1;
+    font-size: 7vw;
+}
+
+.nav ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+/* --- Ends Navigation Bar --- */
