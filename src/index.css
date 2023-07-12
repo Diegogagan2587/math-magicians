@@ -39,6 +39,7 @@ ul {
 .home p {
     margin-bottom: 1.25 vmin;
 }
+
 /* --- Ends Home Page --- */
 /* --- Start Calculator Page --- */
 .calc-page {
@@ -47,4 +48,25 @@ ul {
     padding-left: 3%;
     padding-right: 3%;
 }
+
 /* --- Ends Calculator Page --- */
+
+/* -- start Quotes section -- */
+
+.section-quotes {
+    padding-top: 5%;
+}
+
+.section-quotes p {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 3.5vmin;
+}
+
+.loading {
+    width: fit-content;
+    margin: 3% auto;
+    font-size: 1.5rem;
+    color: red;
+}
