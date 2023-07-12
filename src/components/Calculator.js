@@ -11,7 +11,7 @@ const Calculator = () => {
   };
 
   return (
-    <>
+    <div className='calc-page'>
       <h2>Let's do some math!</h2>
       <div className="calculator">
         <div className="screen-output">
@@ -21,7 +21,7 @@ const Calculator = () => {
         </div>
         <CalcInputs eventHandler={eventHandler} />
       </div>
-    </>
+    </div>
 
   );
 };

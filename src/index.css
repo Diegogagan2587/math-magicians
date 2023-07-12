@@ -40,3 +40,11 @@ ul {
     margin-bottom: 1.25 vmin;
 }
 /* --- Ends Home Page --- */
+/* --- Start Calculator Page --- */
+.calc-page {
+    display: flex;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+/* --- Ends Calculator Page --- */

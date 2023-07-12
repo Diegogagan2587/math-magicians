@@ -12,8 +12,8 @@ button {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  max-width: 50vmin;
-  min-height: 50vmin;
+  width: 40vmin;
+  height: 40vmin;
   margin-left: auto;
   margin-right: auto;
 }
