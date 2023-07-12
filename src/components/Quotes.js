@@ -34,7 +34,7 @@ function Quotes() {
 
   return (
     <div className="section-quotes">
-      <p>{data.quote} -{data.author}</p>
+      <p>{data.quote} <span>-{data.author}</span></p>
     </div>
   );
 }

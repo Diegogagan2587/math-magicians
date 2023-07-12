@@ -60,8 +60,11 @@ ul {
 .section-quotes p {
     width: 80%;
     margin: 0 auto;
-    font-weight: bold;
     font-size: 3.5vmin;
+}
+
+.section-quotes span {
+    font-weight: bold;
 }
 
 .loading {
