@@ -1,67 +1,69 @@
 /* index styles */
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 a:hover {
-    color: #A58B77;
+  color: #a58b77;
 }
 
 body {
-    background-color: #D9CFC7;
-    color: #024059;
+  background-color: #d9cfc7;
+  color: #024059;
 }
 
 /* --- start Navigation Bar --- */
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 3%;
-    padding-right: 3%;
-    background-color: #0B5B8C;
-    color: #D9CFC7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: #0b5b8c;
+  color: #d9cfc7;
 }
 
 .nav .title {
-    flex-grow: 1;
-    font-size: 7vw;
+  flex-grow: 1;
+  font-size: 7vw;
 }
 
 .nav ul {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-evenly;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
 }
 
 /* --- Ends Navigation Bar --- */
+
 /* --- Start Home Page --- */
 .home {
-    padding-left: 3%;
-    padding-right: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .home h2 {
-    margin-top: 3vmin;
-    margin-bottom: 3vmin;
+  margin-top: 3vmin;
+  margin-bottom: 3vmin;
 }
 
 .home p {
-    margin-bottom: 1.25 vmin;
+  margin-bottom: 1.25vmin;
 }
 
 /* --- Ends Home Page --- */
+
 /* --- Start Calculator Page --- */
 .calc-page {
-    display: flex;
-    padding-top: 5%;
-    padding-left: 3%;
-    padding-right: 3%;
+  display: flex;
+  padding-top: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 /* --- Ends Calculator Page --- */
@@ -69,22 +71,22 @@ body {
 /* -- start Quotes section -- */
 
 .section-quotes {
-    padding-top: 5%;
+  padding-top: 5%;
 }
 
 .section-quotes p {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 3.5vmin;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 3.5vmin;
 }
 
 .section-quotes span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .loading {
-    width: fit-content;
-    margin: 3% auto;
-    font-size: 1.5rem;
-    color: red;
+  width: fit-content;
+  margin: 3% auto;
+  font-size: 1.5rem;
+  color: red;
 }
