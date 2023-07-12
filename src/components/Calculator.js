@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import calculate from './logic/calculate';
 import CalcInputs from './inputs';
-import Quotes from './quotes';
+import Quotes from './Quotes';
 
 const Calculator = () => {
   const [mathResult, setMathResult] = useState({});
