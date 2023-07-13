@@ -1,11 +1,21 @@
 import './App.css';
+import {
+  Routes, Route,
+} from 'react-router-dom';
 import Calculator from './components/Calculator';
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+import Quotes from './components/Quotes';
 
 function App() {
   return (
     <div className="App">
-      <h1>Calculator</h1>
-      <Calculator />
+      <Navigation />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="calculator" element={<Calculator />} />
+        <Route path="quote" element={<Quotes />} />
+      </Routes>
     </div>
   );
 }

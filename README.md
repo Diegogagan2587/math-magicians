@@ -166,9 +166,7 @@ Example:
 
 > Additional Features I will add.
 
--  **Home Page**
--  **Quote Page**
-
+-  **Home Page with personalized content**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
